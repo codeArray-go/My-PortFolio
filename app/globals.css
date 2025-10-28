@@ -29,7 +29,6 @@
 }
 .animate-blink {
   animation: blink 1s step-start infinite;
-<<<<<<< HEAD
 }
 
 
@@ -40,6 +39,3 @@
 .NunitoEB {
   font-family: 'NunitoEB';
 }
-=======
-}
->>>>>>> 83c4e29 (Buttons are clickable)

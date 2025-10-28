@@ -19,7 +19,6 @@ const Footer = () => {
           className="hover:scale-110 transition-transform duration-300"
         >
           <Image
-            src="/Logo/linkedin.svg"
             src={`${process.env.NEXT_PUBLIC_URL}/Logo/linkedin.svg`}
             className="invert"
             width={36}
@@ -33,7 +32,6 @@ const Footer = () => {
           className="hover:scale-110 transition-transform duration-300"
         >
           <Image
-            src="/Logo/Twitter.svg"
             src={`${process.env.NEXT_PUBLIC_URL}/Logo/Twitter.svg`}
             className="invert"
             width={36}
@@ -48,7 +46,6 @@ const Footer = () => {
           className="hover:scale-110 transition-transform duration-300"
         >
           <Image
-            src="/Logo/github.svg"
             src={`${process.env.NEXT_PUBLIC_URL}/Logo/github.svg`}
             width={36}
             height={36}
@@ -63,7 +60,6 @@ const Footer = () => {
           className="hover:scale-110 transition-transform duration-300"
         >
           <Image
-            src="/Logo/Instagram.svg"
             src={`${process.env.NEXT_PUBLIC_URL}/Logo/Instagram.svg`}
             width={36}
             height={36}
