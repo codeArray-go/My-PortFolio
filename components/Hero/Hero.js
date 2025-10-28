@@ -75,12 +75,6 @@ const Hero = () => {
           <button className="px-5 py-3 border border-gray-400 rounded-xl cursor-pointer hover:bg-[rgba(57,58,68,0.52)] hover:scale-105 transition duration-300">
             Get Resume
           </button>
-          <Link href="#Projects" className="ease-in px-5 py-3 bg-cyan-600 rounded-xl hover:scale-105 cursor-pointer transition duration-300">
-            Learn More
-          </Link>
-          <Link href="https://codearray-go.github.io/My_resume/" target="_blank" className="px-5 py-3 border border-gray-400 rounded-xl cursor-pointer hover:bg-[rgba(57,58,68,0.52)] hover:scale-105 transition duration-300">
-            Get Resume
-          </Link>
         </div>
       </div>
 

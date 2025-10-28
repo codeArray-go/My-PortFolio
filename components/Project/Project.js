@@ -3,18 +3,10 @@ import ProjectCard from './ProjectCard'
 
 const PorjectData = [
   {
-    image: "/Projects/AllLinks.png",
-    dis: "AllLinks is a responsive web application that lets users create a single, customizable page to display multiple links. Each user can sign and create a profile that includes their name, profile picture, and a list of personal or professional links (e.g., social media, portfolios, or websites). The frontend is built with Next.js and styled using Tailwind CSS to ensure mobile-friendly and clean layouts across devices.",
-    heading: "AllLinks",
-    src: "https://all-link-f.vercel.app/",
-    id: 1
-  },
-  {
-    image: "/Projects/MP3_player.png",
     image: "AllLinks.webp",
     dis: "AllLinks is a responsive web application that lets users create a single, customizable page to display multiple links. Each user can sign and create a profile that includes their name, profile picture, and a list of personal or professional links (e.g., social media, portfolios, or websites). The frontend is built with Next.js and styled using Tailwind CSS to ensure mobile-friendly and clean layouts across devices.",
     heading: "AllLinks",
-    src: "https://all-links-f.vercel.app/",
+    src: "https://all-link-f.vercel.app/",
     id: 1
   },
   {
@@ -25,7 +17,7 @@ const PorjectData = [
     id: 2
   },
   {
-    image: "/Projects/URl_Shortner.png",
+    image: "URl_Shortner.webp",
     image: "URl_Shortner.webp",
     dis: "URL Shortener is a web application designed to simplify long, complex URLs into short, shareable links. Built using modern web technologies, it features a clean, responsive interface where users can input any valid URL and receive a compact version that redirects seamlessly to the original address. The application securely stores each shortened URL in a MongoDB database, allowing for easy management and scalability. This project demonstrates practical use of backend logic, database integration, and user-friendly design — making it both a functional tool and a showcase of full-stack development skills.",
     heading: "URL shortner",
