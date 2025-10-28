@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
-<<<<<<< HEAD
-const nextConfig = {};
-=======
+
 const nextConfig = {
     images: {
         remotePatterns: [
@@ -12,6 +10,5 @@ const nextConfig = {
         ]
     }
 };
->>>>>>> 83c4e29 (Buttons are clickable)
 
 export default nextConfig;
