@@ -2,10 +2,7 @@ import React from "react";
 import Image from "next/image";
 import CodeProfile from "./CodeProfile";
 import { Roboto_Slab } from "next/font/google";
-<<<<<<< HEAD
-=======
 import Link from "next/link";
->>>>>>> 83c4e29 (Buttons are clickable)
 
 const robotoslab = Roboto_Slab({
   variable: "--font-roboto-sans",
@@ -52,11 +49,7 @@ const Hero = () => {
           Love JavaScript
           <Image
             className="mx-1"
-<<<<<<< HEAD
-            src="/Logo/javascript.svg"
-=======
             src={`${process.env.NEXT_PUBLIC_URL}/Logo/javascript.svg`}
->>>>>>> 83c4e29 (Buttons are clickable)
             width={20}
             height={20}
             alt="javascript"
@@ -76,21 +69,18 @@ const Hero = () => {
           id="Resume_More_Button"
           className="text-white mt-8 flex flex-wrap gap-4 justify-center lg:justify-start"
         >
-<<<<<<< HEAD
           <button className="px-5 py-3 bg-cyan-600 rounded-xl hover:scale-105 cursor-pointer transition duration-300">
             Learn More
           </button>
           <button className="px-5 py-3 border border-gray-400 rounded-xl cursor-pointer hover:bg-[rgba(57,58,68,0.52)] hover:scale-105 transition duration-300">
             Get Resume
           </button>
-=======
           <Link href="#Projects" className="ease-in px-5 py-3 bg-cyan-600 rounded-xl hover:scale-105 cursor-pointer transition duration-300">
             Learn More
           </Link>
           <Link href="https://codearray-go.github.io/My_resume/" target="_blank" className="px-5 py-3 border border-gray-400 rounded-xl cursor-pointer hover:bg-[rgba(57,58,68,0.52)] hover:scale-105 transition duration-300">
             Get Resume
           </Link>
->>>>>>> 83c4e29 (Buttons are clickable)
         </div>
       </div>
 

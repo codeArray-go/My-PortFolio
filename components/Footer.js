@@ -19,11 +19,8 @@ const Footer = () => {
           className="hover:scale-110 transition-transform duration-300"
         >
           <Image
-<<<<<<< HEAD
             src="/Logo/linkedin.svg"
-=======
             src={`${process.env.NEXT_PUBLIC_URL}/Logo/linkedin.svg`}
->>>>>>> 83c4e29 (Buttons are clickable)
             className="invert"
             width={36}
             height={36}
@@ -36,11 +33,8 @@ const Footer = () => {
           className="hover:scale-110 transition-transform duration-300"
         >
           <Image
-<<<<<<< HEAD
             src="/Logo/Twitter.svg"
-=======
             src={`${process.env.NEXT_PUBLIC_URL}/Logo/Twitter.svg`}
->>>>>>> 83c4e29 (Buttons are clickable)
             className="invert"
             width={36}
             height={36}
@@ -54,11 +48,8 @@ const Footer = () => {
           className="hover:scale-110 transition-transform duration-300"
         >
           <Image
-<<<<<<< HEAD
             src="/Logo/github.svg"
-=======
             src={`${process.env.NEXT_PUBLIC_URL}/Logo/github.svg`}
->>>>>>> 83c4e29 (Buttons are clickable)
             width={36}
             height={36}
             className="invert"
@@ -72,11 +63,8 @@ const Footer = () => {
           className="hover:scale-110 transition-transform duration-300"
         >
           <Image
-<<<<<<< HEAD
             src="/Logo/Instagram.svg"
-=======
             src={`${process.env.NEXT_PUBLIC_URL}/Logo/Instagram.svg`}
->>>>>>> 83c4e29 (Buttons are clickable)
             width={36}
             height={36}
             className="invert"
