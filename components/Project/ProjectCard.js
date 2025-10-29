@@ -13,18 +13,17 @@ const ProjectCard = ({ items }) => {
         {/* Project Image */}
         <div
           style={{
-            WebkitMaskImage: `url(${process.env.NEXT_PUBLIC_URL}/MaskPaint.webp)`,
+            WebkitMaskImage: `url(${process.env.NEXT_PUBLIC_URL}/MaskPaint.png)`,
             WebkitMaskSize: "cover",
             WebkitMaskRepeat: "no-repeat",
             WebkitMaskPosition: "center",
-            maskImage: `url(${process.env.NEXT_PUBLIC_URL}/MaskPaint.webp)`,
+            maskImage: `url(${process.env.NEXT_PUBLIC_URL}/MaskPaint.png)`,
             maskSize: "cover",
             maskRepeat: "no-repeat",
             maskPosition: "center",
           }}
           className="relative w-full max-w-[620px] h-[220px] sm:h-[300px] md:h-[400px]"
         >
-
           <Image
             src={`${process.env.NEXT_PUBLIC_PROJECTIMG}/${items.image}`}
             alt={items.heading}
@@ -47,7 +46,7 @@ const ProjectCard = ({ items }) => {
             Visit project
             <Image
               className="ms-2"
-              src={`${process.env.NEXT_PUBLIC_URL}/Arrow.webp`}
+              src={`${process.env.NEXT_PUBLIC_URL}/Arrow.svg`}
               height={20}
               width={20}
               alt="Arrow"

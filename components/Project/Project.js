@@ -18,7 +18,6 @@ const PorjectData = [
   },
   {
     image: "URl_Shortner.webp",
-    image: "URl_Shortner.webp",
     dis: "URL Shortener is a web application designed to simplify long, complex URLs into short, shareable links. Built using modern web technologies, it features a clean, responsive interface where users can input any valid URL and receive a compact version that redirects seamlessly to the original address. The application securely stores each shortened URL in a MongoDB database, allowing for easy management and scalability. This project demonstrates practical use of backend logic, database integration, and user-friendly design — making it both a functional tool and a showcase of full-stack development skills.",
     heading: "URL shortner",
     src: "https://github.com/codeArray-go/Url_Shortener",
@@ -29,7 +28,6 @@ const PorjectData = [
 const Project = () => {
   return (
     <main className="w-full flex flex-col items-center h-full">
-      <h1 className="text-white text-5xl my-8 font-black">PROJECTS</h1>
       <h1 id='Projects' className="text-white text-5xl my-8 font-black">PROJECTS</h1>
       {PorjectData.map((item) => {
         return (<ProjectCard key={item.id} items={item} />)
