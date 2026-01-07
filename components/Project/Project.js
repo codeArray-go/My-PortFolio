@@ -1,40 +1,39 @@
-import React from 'react'
-import ProjectCard from './ProjectCard'
+import React from "react";
+import ProjectCard from "./ProjectCard";
 
 const PorjectData = [
   {
     image: "AllLinks.webp",
     dis: "AllLinks is a responsive web application that lets users create a single, customizable page to display multiple links. Each user can sign and create a profile that includes their name, profile picture, and a list of personal or professional links (e.g., social media, portfolios, or websites). The frontend is built with Next.js and styled using Tailwind CSS to ensure mobile-friendly and clean layouts across devices.",
     heading: "AllLinks",
+    tech: ["Next.js", "Tailwind css", "JavaScript", "motion"],
     src: "https://all-link-f.vercel.app/",
-    id: 1
+    id: 1,
   },
   {
-    image: "MP3_player.webp",
-    dis: "This MP3 player is a front-end application built using Js logics, designed to play audio files retrieved from the browser's local storage. It offers core features such as play, pause, skip, and track navigation. By utilizing local storage, the application ensures fast access to stored songs and provides a smooth, music experience for users, all within an intuitive and responsive interface.",
-    heading: "Mp3 Player",
-    src: "https://github.com/codeArray-go/Mp3_Player",
-    id: 2
+    image: "Linphase_Technology.png",
+    dis: "Linphase Technology is a frontend-focused company website created to present the brand, services, and basic information in a clear and structured way. The project was built with the goal of practicing real-world website layout, responsiveness, and UI structure without relying on backend logic. The website includes multiple sections such as a landing page, company overview, services, and contact information. The layout is fully responsive and adapts properly across different screen sizes. Emphasis was placed on clean design, readable content structure, and smooth user interaction.This project does not include backend development. All content is static and handled on the client side, making it lightweight and fast to load.",
+    tech: ["Next.js", "Tailwind css", "JavaScript", "motion"],
+    heading: "Linphase Technology",
+    src: "http://linphasetechnology.com/",
+    id: 2,
   },
-  {
-    image: "URl_Shortner.webp",
-    dis: "URL Shortener is a web application designed to simplify long, complex URLs into short, shareable links. Built using modern web technologies, it features a clean, responsive interface where users can input any valid URL and receive a compact version that redirects seamlessly to the original address. The application securely stores each shortened URL in a MongoDB database, allowing for easy management and scalability. This project demonstrates practical use of backend logic, database integration, and user-friendly design — making it both a functional tool and a showcase of full-stack development skills.",
-    heading: "URL shortner",
-    src: "https://github.com/codeArray-go/Url_Shortener",
-    id: 3
-  },
-]
+];
 
 const Project = () => {
   return (
     <main className="w-full flex flex-col items-center h-full">
-      <h1 id='Projects' className="text-white text-5xl my-8 font-black">PROJECTS</h1>
+      <h1
+        id="Projects"
+        className="text-white text-5xl my-8 font-black uppercase underline underline-offset-8"
+      >
+        &nbsp;PROJECTS DONE&nbsp;
+      </h1>
       {PorjectData.map((item) => {
-        return (<ProjectCard key={item.id} items={item} />)
-      })
-      }
+        return <ProjectCard key={item.id} items={item} tech={item.tech} />;
+      })}
     </main>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

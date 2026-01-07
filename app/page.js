@@ -3,7 +3,6 @@ import Project from "@/components/Project/Project";
 import StatusLine from '@/components/StatusLine'
 import { Poppins } from "next/font/google";
 
-
 const poppins = Poppins({
   variable: "--font-poppins-mono",
   subsets: ["latin"],

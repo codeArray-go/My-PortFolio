@@ -1,8 +1,11 @@
+"use client"
+
 import React from "react";
 import Image from "next/image";
 import CodeProfile from "./CodeProfile";
 import { Roboto_Slab } from "next/font/google";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const robotoslab = Roboto_Slab({
   variable: "--font-roboto-sans",
@@ -11,9 +14,16 @@ const robotoslab = Roboto_Slab({
 
 const Hero = () => {
   return (
+
     <main className="flex flex-col lg:flex-row items-center justify-center w-full px-4 sm:px-6 md:px-10 my-8 font-poppins">
+
       {/* Left Portion */}
-      <div
+
+      <motion.div
+        initial={{ opacity: 0.3, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.4 }}
+        viewport={{once: true}}
         id="left"
         className="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:max-w-[600px]"
       >
@@ -76,16 +86,21 @@ const Hero = () => {
             Get Resume
           </Link>
         </div>
-      </div>
+      </motion.div>
+
 
       {/* Right Portion */}
-      <div
+      <motion.div
+        initial={{ opacity: 0.3, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.4 }}
+        viewport={{once: true}}
         id="right"
         className="mt-10 lg:mt-0 max-w-[600px] text-white flex items-center justify-center px-4 sm:px-6 lg:px-8"
       >
         <CodeProfile />
-      </div>
-    </main>
+      </motion.div>
+    </main >
   );
 };
 

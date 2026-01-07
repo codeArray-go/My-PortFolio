@@ -34,8 +34,8 @@
 
 @font-face {
     font-family: 'NunitoEB';
-    src: url('/fonts/Nunito-ExtraBold.ttf');
+    src: url('/fonts/Nunito-VariableFont_wght.ttf');
 }
-.NunitoEB {
+.Nunito {
   font-family: 'NunitoEB';
 }
