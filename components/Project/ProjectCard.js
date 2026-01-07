@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const ProjectCard = ({ items, tech }) => {
   const side = items.id % 2 === 0 ? "left" : "right";
@@ -61,20 +62,30 @@ const ProjectCard = ({ items, tech }) => {
               {items.heading} :-
             </h2>
             <p className="ms-1 sm:ms-3 my-2 tracking-wider">{items.dis}</p>
+
+            {/* Tech stack */}
             <div className="ms-1 sm:ms-3">
-              <h1 className="my-2 font-bold text-lg underline underline-offset-4 text-amber-500">
+              <h2 className="my-2 font-bold text-lg underline underline-offset-4 text-amber-500">
                 Tech Stack:-{" "}
-              </h1>
+              </h2>
               <ol>
                 {tech.map((item, idx) => {
                   return (
-                    <li key={idx} className="list-disc mx-7">
+                    <li key={idx} className="list-decimal mx-7">
                       {item}
                     </li>
                   );
                 })}
               </ol>
             </div>
+
+            <li className="mt-4 text-[15px] list-disc mx-5">
+              <span className="font-bold">Code Link:-</span>{" "}
+              <Link href={items.link} className="text-blue-500 hover:underline" target="_blank">
+                {items.link}
+              </Link>
+            </li>
+
             <button
               onClick={() => window.open(items.src, "_blank")}
               className="text-black text-sm cursor-pointer hover:scale-105 ease-in-out duration-300 bg-yellow-300 py-2.5 px-4 mt-3 rounded-lg flex items-center"
