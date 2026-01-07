@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="my-8 mx-auto w-[95%] rounded-lg py-8 flex flex-col items-center bg-zinc-900 text-white">
+    <footer className="w-full rounded-lg py-16 flex flex-col gap-3 items-center bg-zinc-900 text-white">
       {/* Heading */}
-      <h1 className="text-lg sm:text-xl md:text-2xl font-bold mb-6 text-center">
+      <h1 className="text-lg sm:text-xl md:text-3xl font-black mb-6 text-center Nunito">
         Check Out My Social Media
       </h1>
 
