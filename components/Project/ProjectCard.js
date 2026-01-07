@@ -20,7 +20,7 @@ const ProjectCard = ({ items, tech }) => {
       <main
         className={`flex flex-col md:flex-row ${
           side === "left" ? "md:flex-row" : "md:flex-row-reverse"
-        } flex-wrap items-center justify-center gap-6`}
+        } flex-wrap items-center justify-around gap-3`}
       >
         {/* Project Image */}
         <motion.div
@@ -57,22 +57,24 @@ const ProjectCard = ({ items, tech }) => {
           viewport={{ once: true }}
         >
           <div className="flex flex-col items-start text-sm sm:text-[15px] w-full max-w-[500px] px-4 md:px-0 mt-4 md:mt-0">
-            <h2 className="mb-2 text-xl sm:text-2xl font-bold underline text-blue-500">
+            <h2 className="mb-2 text-xl sm:text-2xl font-bold underline text-amber-500">
               {items.heading} :-
             </h2>
-            <p className="ms-1 sm:ms-3 my-2">{items.dis}</p>
-            <h1 className="my-2 font-bold text-lg underline underline-offset-4 text-blue-400">
-              Tech Stack:-{" "}
-            </h1>
-            <ol>
-              {tech.map((item, idx) => {
-                return (
-                  <li key={idx} className="list-disc mx-5">
-                    {item}
-                  </li>
-                );
-              })}
-            </ol>
+            <p className="ms-1 sm:ms-3 my-2 tracking-wider">{items.dis}</p>
+            <div className="ms-1 sm:ms-3">
+              <h1 className="my-2 font-bold text-lg underline underline-offset-4 text-amber-500">
+                Tech Stack:-{" "}
+              </h1>
+              <ol>
+                {tech.map((item, idx) => {
+                  return (
+                    <li key={idx} className="list-disc mx-7">
+                      {item}
+                    </li>
+                  );
+                })}
+              </ol>
+            </div>
             <button
               onClick={() => window.open(items.src, "_blank")}
               className="text-black text-sm cursor-pointer hover:scale-105 ease-in-out duration-300 bg-yellow-300 py-2.5 px-4 mt-3 rounded-lg flex items-center"
