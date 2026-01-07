@@ -15,7 +15,6 @@
 .animate-wave {
   display: inline-block;
   transform-origin: 80% 80%;
-  /* makes it rotate like a wrist */
   animation: wave 3s infinite;
   transition: ease-in-out;
 }

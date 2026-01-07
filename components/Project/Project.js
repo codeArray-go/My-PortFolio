@@ -6,7 +6,7 @@ const PorjectData = [
     image: "AllLinks.webp",
     dis: "AllLinks is a responsive web application that lets users create a single, customizable page to display multiple links. Each user can sign and create a profile that includes their name, profile picture, and a list of personal or professional links (e.g., social media, portfolios, or websites). The frontend is built with Next.js and styled using Tailwind CSS to ensure mobile-friendly and clean layouts across devices.",
     heading: "AllLinks",
-    tech: ["Next.js", "Tailwind css", "JavaScript", "motion"],
+    tech: ["Next.js", "Tailwind css", "Mongodb", "Node.js", "express.js"],
     src: "https://all-link-f.vercel.app/",
     id: 1,
   },
@@ -25,7 +25,7 @@ const Project = () => {
     <main className="w-full flex flex-col items-center h-full">
       <h1
         id="Projects"
-        className="text-white text-4xl my-8 font-black uppercase underline underline-offset-8"
+        className="text-white text-[33px] my-8 font-black uppercase "
       >
         &nbsp;PROJECTS DONE&nbsp;
       </h1>

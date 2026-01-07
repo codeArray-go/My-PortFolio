@@ -79,8 +79,8 @@ const Hero = () => {
           id="Resume_More_Button"
           className="text-white mt-8 flex flex-wrap gap-4 justify-center lg:justify-start"
         >
-          <Link href="#Projects" className="px-5 py-3 bg-cyan-600 rounded-xl hover:scale-105 cursor-pointer transition duration-300">
-            Learn More
+          <Link href="https://wa.me/+918882601382" target="_blank" className="px-5 py-3 bg-cyan-600 rounded-xl hover:scale-105 cursor-pointer transition duration-300">
+            To Hire Me
           </Link>
           <Link href={"https://codearray-go.github.io/My_resume/"} target="_blank" className="px-5 py-3 border border-gray-400 rounded-xl cursor-pointer hover:bg-[rgba(57,58,68,0.52)] hover:scale-105 transition duration-300">
             Get Resume
