@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import { link } from "framer-motion/client";
 
 const PorjectData = [
   {
@@ -32,8 +31,10 @@ const Project = () => {
       >
         &nbsp;PROJECTS DONE&nbsp;
       </h1>
+
+      <div className="w-full h-px bg-white/10 mt-6"></div>
       {PorjectData.map((item) => {
-        return <ProjectCard key={item.id} items={item} tech={item.tech}/>;
+        return <ProjectCard key={item.id} items={item} tech={item.tech} />;
       })}
     </main>
   );

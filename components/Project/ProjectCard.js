@@ -39,7 +39,7 @@ const ProjectCard = ({ items, tech }) => {
             maskRepeat: "no-repeat",
             maskPosition: "center",
           }}
-          className="relative w-full max-w-[620px] h-[220px] sm:h-[300px] md:h-[400px]"
+          className="relative w-full max-w-155 h-55 sm:h-75 md:h-100"
         >
           <Image
             src={`${process.env.NEXT_PUBLIC_PROJECTIMG}/${items.image}`}
@@ -57,7 +57,7 @@ const ProjectCard = ({ items, tech }) => {
           transition={{ duration: 1.4 }}
           viewport={{ once: true }}
         >
-          <div className="flex flex-col items-start text-sm sm:text-[15px] w-full max-w-[500px] px-4 md:px-0 mt-4 md:mt-0">
+          <div className="flex flex-col items-start text-sm sm:text-[15px] w-full max-w-125 px-4 md:px-0 mt-4 md:mt-0">
             <h2 className="mb-2 text-xl sm:text-2xl font-bold underline text-amber-500">
               {items.heading} :-
             </h2>
@@ -81,7 +81,11 @@ const ProjectCard = ({ items, tech }) => {
 
             <li className="mt-4 text-[15px] list-disc mx-5">
               <span className="font-bold">Code Link:-</span>{" "}
-              <Link href={items.link} className="text-blue-500 hover:underline" target="_blank">
+              <Link
+                href={items.link}
+                className="text-blue-500 hover:underline"
+                target="_blank"
+              >
                 {items.link}
               </Link>
             </li>

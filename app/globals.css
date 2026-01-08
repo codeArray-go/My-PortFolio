@@ -32,9 +32,17 @@
 
 
 @font-face {
-    font-family: 'NunitoEB';
-    src: url('/fonts/Nunito-VariableFont_wght.ttf');
+  font-family: 'Nunito';
+  src: url('/fonts/Nunito-VariableFont_wght.ttf');
 }
-.Nunito {
-  font-family: 'NunitoEB';
+.Nunito{
+  font-family: 'Nunito';
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf');
+}
+.Poppins{
+  font-family: 'Poppins';
 }

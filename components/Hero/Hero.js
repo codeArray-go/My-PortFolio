@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -14,18 +14,16 @@ const robotoslab = Roboto_Slab({
 
 const Hero = () => {
   return (
-
     <main className="flex flex-col lg:flex-row items-center justify-center w-full px-4 sm:px-6 md:px-10 my-8 font-poppins">
-
       {/* Left Portion */}
 
       <motion.div
         initial={{ opacity: 0.3, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.4 }}
-        viewport={{once: true}}
+        viewport={{ once: true }}
         id="left"
-        className="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:max-w-[600px]"
+        className="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:max-w-150"
       >
         {/* Heading */}
         <h1
@@ -79,28 +77,35 @@ const Hero = () => {
           id="Resume_More_Button"
           className="text-white mt-8 flex flex-wrap gap-4 justify-center lg:justify-start"
         >
-          <Link href="https://wa.me/+918882601382" target="_blank" className="px-5 py-3 bg-cyan-600 rounded-xl hover:scale-105 cursor-pointer transition duration-300">
+          <Link
+            href="https://wa.me/+918882601382"
+            target="_blank"
+            className="px-5 py-3 bg-cyan-600 rounded-xl hover:scale-105 cursor-pointer transition duration-300"
+          >
             To Hire Me
           </Link>
-          <Link href={"https://codearray-go.github.io/My_resume/"} target="_blank" className="px-5 py-3 border border-gray-400 rounded-xl cursor-pointer hover:bg-[rgba(57,58,68,0.52)] hover:scale-105 transition duration-300">
+          <Link
+            href={"https://codearray-go.github.io/My_resume/"}
+            target="_blank"
+            className="px-5 py-3 border border-gray-400 rounded-xl cursor-pointer hover:bg-[rgba(57,58,68,0.52)] hover:scale-105 transition duration-300"
+          >
             Get Resume
           </Link>
         </div>
       </motion.div>
-
 
       {/* Right Portion */}
       <motion.div
         initial={{ opacity: 0.3, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.4 }}
-        viewport={{once: true}}
+        viewport={{ once: true }}
         id="right"
-        className="mt-10 lg:mt-0 max-w-[600px] text-white flex items-center justify-center px-4 sm:px-6 lg:px-8"
+        className="mt-10 lg:mt-0 max-w-150 text-white flex items-center justify-center px-4 sm:px-6 lg:px-8"
       >
         <CodeProfile />
       </motion.div>
-    </main >
+    </main>
   );
 };
 

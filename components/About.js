@@ -2,17 +2,13 @@ import React from "react";
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="w-full text-gray-300 px-6 py-20 my-4"
-    >
+    <section id="about" className="w-full text-gray-300 px-6 py-20 my-4">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        
         {/* Left Section - Image */}
         <div className="flex justify-center md:justify-start">
           <div className="relative">
             <img
-              src="Assets/Coder.gif"
+              src={`${process.env.NEXT_PUBLIC_URL}/Coder.gif`}
               alt="Akhil Singh Bhandari"
               className="w-72 h-72 md:w-80 md:h-80 rounded-2xl object-cover border border-gray-700"
             />
@@ -36,9 +32,9 @@ const About = () => {
           </p>
 
           <p className="text-gray-400 leading-relaxed mb-6">
-            I began with HTML, CSS, and JavaScript, then moved to React.js and the
-            MERN stack. Alongside this, I revisited Java to strengthen my core
-            programming fundamentals.
+            I began with HTML, CSS, and JavaScript, then moved to React.js and
+            the MERN stack. Alongside this, I revisited Java to strengthen my
+            core programming fundamentals.
           </p>
 
           {/* Timeline */}
