@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+
+/* Hand wave animation */
+@keyframes wave {
+  0% { transform: rotate(0deg);}
+  15% { transform: rotate(14deg);}
+  30% { transform: rotate(-8deg);}
+  40% { transform: rotate(14deg);}
+  50% { transform: rotate(-4deg);}
+  60% { transform: rotate(10deg);}
+  70% { transform: rotate(0deg);}
+  100% { transform: rotate(0deg);}
+}
+.animate-wave {
+  display: inline-block;
+  transform-origin: 80% 80%;
+  animation: wave 3s infinite;
+  transition: ease-in-out;
+}
+
+
+
+/* Cursor blinking animation */
+@keyframes blink {
+  0%,50%,100% {opacity: 1;}
+  25%,75% {opacity: 0;}
+}
+.animate-blink {
+  animation: blink 1s step-start infinite;
+}
+
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/Nunito-VariableFont_wght.ttf');
+}
+.Nunito{
+  font-family: 'Nunito';
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf');
+}
+.Poppins{
+  font-family: 'Poppins';
+}
