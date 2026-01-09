@@ -14,27 +14,19 @@ const Navbar = () => {
       className={`${poppins.className} w-full flex flex-col sm:flex-row items-center sm:justify-between gap-6 px-4 sm:px-10 py-4`}
     >
       {/* Certification */}
-      <div className="text-white hidden sm:flex flex-col items-center">
-        <Image
-          src={`${process.env.NEXT_PUBLIC_URL}/AWS.png`}
-          width={50}
-          height={50}
-          alt="Amazon certificate"
-          priority
-        />
-        <p className="text-center text-[10px] leading-tight mt-1">
-          CERTIFICATION:
-          <br />
-          SOLUTIONS ARCHITECTURE
-          <br />
-          JOB SIMULATION
-        </p>
+      <div className="text-white hidden sm:flex flex-col items-center Nunito font-black text-3xl">
+        <Link
+          href="/"
+          className="cursor-pointer"
+        >
+          &lt;ASB &#8725;&gt;
+        </Link>
       </div>
 
       {/* Blog Menu */}
       <div className="relative bg-[rgba(255,255,255,0.06)] py-5 px-6 sm:px-16 rounded-2xl">
         <span className="absolute -top-2.5 left-3 bg-[#9b9b9bf8] px-4 py-0.5 text-xs rounded-full border border-gray-700">
-          Blogs
+          My Blogs
         </span>
 
         <ul className="flex flex-wrap justify-center items-center gap-4 text-white text-sm sm:text-base">
@@ -42,7 +34,12 @@ const Navbar = () => {
             href="/"
             className="cursor-pointer p-2 bg-[rgba(255,255,255,0.1)] rounded-full"
           >
-            <Image src={`${process.env.NEXT_PUBLIC_URL}/Home.svg`} alt="home" height={25} width={25} />
+            <Image
+              src={`${process.env.NEXT_PUBLIC_URL}/Home.svg`}
+              alt="home"
+              height={25}
+              width={25}
+            />
           </Link>
           <Link
             href="/blogs/java"
