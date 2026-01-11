@@ -6,11 +6,18 @@ import CodeProfile from "./CodeProfile";
 import { Roboto_Slab } from "next/font/google";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const robotoslab = Roboto_Slab({
   variable: "--font-roboto-sans",
   subsets: ["latin"],
 });
+
+const Practices = [
+  { text: "Learn New Tech", src: "learn.svg" },
+  { text: "Clean Coding", src: "code.svg" },
+  { text: "Using Ai", src: "ai.svg" },
+];
 
 const Hero = () => {
   return (
@@ -41,12 +48,18 @@ const Hero = () => {
             id="Buttons"
             className="mt-4 flex flex-wrap gap-3 justify-center lg:justify-start"
           >
-            {["Learning Java", "Clean Code", "Learn AI"].map((label, i) => (
+            {Practices.map((item, i) => (
               <button
                 key={i}
-                className="text-white bg-[rgba(101,101,101,0.2)] border border-gray-500 rounded-full py-2.5 px-5 text-sm sm:text-base cursor-pointer hover:bg-[rgba(255,255,255,0.15)] hover:scale-105 transition duration-300"
+                className="text-white bg-[rgba(101,101,101,0.2)] border border-gray-500 rounded-full py-2.5 px-5 text-sm sm:text-base hover:scale-105 transition duration-300 flex gap-2"
               >
-                {label}
+                <Image
+                  src={`${process.env.NEXT_PUBLIC_URL_PRACTICE}/${item.src}`}
+                  alt="img"
+                  height={20}
+                  width={20}
+                />
+                {item.text}
               </button>
             ))}
           </div>
@@ -54,10 +67,10 @@ const Hero = () => {
 
         {/* Interests */}
         <p className="w-full text-gray-400 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-sm sm:text-base leading-relaxed">
-          Love JavaScript
+          Love Java
           <Image
             className="mx-1"
-            src={`${process.env.NEXT_PUBLIC_URL}/Logo/javascript.svg`}
+            src={`${process.env.NEXT_PUBLIC_URL}/Logo/java.svg`}
             width={20}
             height={20}
             alt="javascript"
@@ -75,21 +88,39 @@ const Hero = () => {
         {/* Buttons */}
         <div
           id="Resume_More_Button"
-          className="text-white mt-8 flex flex-wrap gap-4 justify-center lg:justify-start"
+          className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start"
         >
+          {/* Hire Me */}
           <Link
-            href="https://wa.me/+918882601382"
+            href="https://wa.me/918882601382"
             target="_blank"
-            className="px-5 py-3 bg-cyan-600 rounded-xl hover:scale-105 cursor-pointer transition duration-300"
+            rel="noopener noreferrer"
+            className="px-5 py-3 bg-cyan-600 text-white rounded-xl
+               transition-all duration-300
+               hover:scale-105 hover:bg-cyan-700
+               active:scale-95"
           >
             To Hire Me
           </Link>
+
+          {/* Resume */}
           <Link
-            href={"https://codearray-go.github.io/My_resume/"}
+            href="https://codearray-go.github.io/My_resume/"
             target="_blank"
-            className="px-5 py-3 border border-gray-400 rounded-xl cursor-pointer hover:bg-[rgba(57,58,68,0.52)] hover:scale-105 transition duration-300"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-5 py-3
+               border border-gray-400 rounded-xl text-white
+               transition-all duration-300
+               hover:scale-105 hover:bg-[rgba(57,58,68,0.52)]
+               active:scale-95"
           >
             Get Resume
+            <DotLottieReact
+              src="https://lottie.host/07a63149-b014-4aef-9d6a-015cf0866ff7/Nttw3xTPaf.lottie"
+              loop
+              autoplay
+              style={{ width: 30, height: 30 }}
+            />
           </Link>
         </div>
       </motion.div>

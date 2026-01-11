@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero/Hero";
+import MyCertification from "@/components/MyCertification";
 import Project from "@/components/Project/Project";
 import StatusLine from "@/components/StatusLine";
 import { Poppins } from "next/font/google";
@@ -25,6 +26,7 @@ export default function Home() {
         <Hero />
         <About />
         <Project />
+        <MyCertification />
         <Contact />
       </main>
     </>

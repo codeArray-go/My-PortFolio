@@ -11,9 +11,11 @@ const CoderInfo = {
     role: "MERN stack developer",
     location: "Faridabad",
     skills: [
+        "JavaScript",
+        "TypeScript",
+        "Java",
         "HTML",
         "CSS",
-        "JavaScript",
         "React.js",
         "Node.js",
         "Express.js",
