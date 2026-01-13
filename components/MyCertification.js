@@ -6,7 +6,7 @@ const certificateData = {
   issuer: "Forage",
   description:
     "Completed practical tasks simulating real-world software engineering workflows.",
-  image: "/Certificate.png",
+  image: "Certificate.png",
   verifyLink:
     "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_CQ2Fb84gcNCMwBK7T_1734100419083_completion_certificate.pdf",
 };
@@ -22,7 +22,7 @@ const MyCertification = () => {
         {/* Image */}
         <div className="relative w-full overflow-hidden rounded-xl border border-gray-700">
           <Image
-            src={certificateData.image}
+            src={`${process.env.NEXT_PUBLIC_URL}/${certificateData.image}`}
             alt={`${certificateData.title} Certificate`}
             width={1200}
             height={850}

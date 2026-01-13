@@ -42,7 +42,7 @@ const Navbar = () => {
             />
           </Link>
           <Link
-            href="/blogs/java"
+            href="/blogs/Java"
             className="cursor-pointer hover:underline underline-offset-4"
           >
             Java

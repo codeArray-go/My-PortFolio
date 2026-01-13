@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import LenisWrapper from "@/components/LenisWrapper";
-
+import "prismjs/themes/prism-tomorrow.css";
 
 export const metadata = {
   title: "Create Next App",
@@ -12,14 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className="antialiased relative h-full w-full flex flex-col items-center justify-center"
-      >
+      <body className="antialiased relative h-full w-full flex flex-col items-center justify-center">
         <div className="absolute top-0 z-[-2] h-full w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
         <Navbar />
-        <LenisWrapper>
-          {children}
-        </LenisWrapper>
+        <LenisWrapper>{children}</LenisWrapper>
         <Footer />
       </body>
     </html>

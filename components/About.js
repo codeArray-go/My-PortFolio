@@ -86,7 +86,7 @@ const About = () => {
                 src: "nodejs.svg",
               },
               {
-                lang: "Express",
+                lang: "Express.js",
                 src: "expressjs.svg",
               },
               {
