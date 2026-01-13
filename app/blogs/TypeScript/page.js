@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const page = () => {fe
+const page = () => {
   return (
     <section className="w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-10 py-8 sm:py-10 text-white Poppins">
       {/* Title */}
