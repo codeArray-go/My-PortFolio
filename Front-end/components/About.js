@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -21,7 +22,7 @@ const About = () => {
         {/* Right Section - Content */}
         <div>
           <h2 className="text-4xl font-semibold text-white mb-4">
-            My Story :-
+            👦🏻My Story :-
           </h2>
 
           <p className="text-gray-400 leading-relaxed mb-4">
@@ -56,22 +57,59 @@ const About = () => {
           {/* Tech Stack */}
           <div className="flex flex-wrap gap-3">
             {[
-              "Java",
-              "JavaScript",
-              "TypeScript",
-              "HTML",
-              "CSS",
-              "React",
-              "Node.js",
-              "Express",
-              "MongoDB",
-            ].map((tech) => (
-              <span
-                key={tech}
-                className="px-4 py-1 rounded-full text-sm bg-[#121826] border border-gray-700 text-gray-300"
+              {
+                lang: "Java",
+                src: "java.svg",
+              },
+              {
+                lang: "JavaScript",
+                src: "javascript.svg",
+              },
+              {
+                lang: "TypeScript",
+                src: "typescript.svg",
+              },
+              {
+                lang: "HTML",
+                src: "html5.svg",
+              },
+              {
+                lang: "CSS",
+                src: "css.svg",
+              },
+              {
+                lang: "React",
+                src: "react.svg",
+              },
+              {
+                lang: "Node.js",
+                src: "nodejs.svg",
+              },
+              {
+                lang: "Socket.io",
+                src: "Socket.svg",
+              },
+              {
+                lang: "Express.js",
+                src: "expressjs.png",
+              },
+              {
+                lang: "mongoDB",
+                src: "mongodb.ico",
+              },
+            ].map((tech, idx) => (
+              <div
+                key={idx}
+                className="px-4 py-2 rounded-full text-sm bg-[#121826] border border-gray-700 text-gray-300 flex items-center gap-2"
               >
-                {tech}
-              </span>
+                <Image
+                  src={`${process.env.NEXT_PUBLIC_URL_LOGO}/${tech.src}`}
+                  height={16}
+                  width={18}
+                  alt={`${tech.lang} logo`}
+                />
+                {tech.lang}
+              </div>
             ))}
           </div>
         </div>

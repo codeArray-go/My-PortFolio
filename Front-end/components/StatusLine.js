@@ -9,7 +9,8 @@ const StatusLine = () => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const docHeight =
-        document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
       const scrollPercent = (scrollTop / docHeight) * 100;
       setScrollHeight(scrollPercent);
     };

@@ -1,8 +1,24 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import { link } from "framer-motion/client";
 
 const PorjectData = [
+  {
+    image: "Chween.png",
+    dis: "This is a real-time chat application with a responsive, mobile-friendly interface that supports user authentication and one-to-one messaging. It focuses on reliable message delivery, simple UI design, and smooth performance across devices.",
+    heading: "Chween",
+    tech: [
+      "React.js",
+      "Tailwind css",
+      "Mongodb",
+      "Node.js",
+      "express.js",
+      "Socket.io",
+      "Cloudinary",
+    ],
+    link: "https://github.com/codeArray-go/Chat_App",
+    src: "https://chat-app-one-tau-18.vercel.app/",
+    id: 1,
+  },
   {
     image: "AllLinks.webp",
     dis: "AllLinks is a responsive web application that lets users create a single, customizable page to display multiple links. Each user can sign and create a profile that includes their name, profile picture, and a list of personal or professional links (e.g., social media, portfolios, or websites). The frontend is built with Next.js and styled using Tailwind CSS to ensure mobile-friendly and clean layouts across devices.",
@@ -10,7 +26,7 @@ const PorjectData = [
     tech: ["Next.js", "Tailwind css", "Mongodb", "Node.js", "express.js"],
     link: "https://github.com/codeArray-go/AllLinks_f.git",
     src: "https://all-links-f.vercel.app/",
-    id: 1,
+    id: 2,
   },
   {
     image: "Linphase_Technology.png",
@@ -19,7 +35,7 @@ const PorjectData = [
     heading: "Linphase Technology",
     link: "https://github.com/codeArray-go/Linphase-Technology.git",
     src: "http://linphasetechnology.com/",
-    id: 2,
+    id: 3,
   },
 ];
 
@@ -32,7 +48,7 @@ const Project = () => {
       >
         &nbsp;PROJECTS DONE&nbsp;
       </h1>
-      
+
       <div className="w-full h-px bg-white/10 mt-6"></div>
       {PorjectData.map((item) => {
         return <ProjectCard key={item.id} items={item} tech={item.tech} />;

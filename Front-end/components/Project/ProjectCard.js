@@ -81,7 +81,11 @@ const ProjectCard = ({ items, tech }) => {
 
             <li className="mt-4 text-[15px] list-disc mx-5">
               <span className="font-bold">Code Link:-</span>{" "}
-              <Link href={items.link} className="text-blue-500 hover:underline" target="_blank">
+              <Link
+                href={items.link}
+                className="text-blue-500 hover:underline"
+                target="_blank"
+              >
                 {items.link}
               </Link>
             </li>

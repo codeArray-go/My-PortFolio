@@ -31,7 +31,6 @@ const Footer = () => {
   return (
     <footer className="w-full bg-zinc-900 text-white pt-20 pb-10 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-
         <div className="flex flex-col gap-4">
           <h3 className="text-2xl font-extrabold Nunito">
             Akhil Singh Bhandari
@@ -66,7 +65,7 @@ const Footer = () => {
         <div className="flex flex-col gap-6">
           <div>
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
-            <div className="flex gap-6">
+            <div className="flex gap-5">
               {socials.map((social) => (
                 <Link
                   key={social.name}
