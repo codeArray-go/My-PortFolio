@@ -104,7 +104,7 @@ const About = () => {
               >
                 <Image
                   src={`${process.env.NEXT_PUBLIC_URL_LOGO}/${tech.src}`}
-                  height={16}
+                  height={18}
                   width={18}
                   alt={`${tech.lang} logo`}
                 />
