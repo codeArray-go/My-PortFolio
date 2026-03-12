@@ -3,13 +3,13 @@ import ProjectCard from "./ProjectCard";
 
 const PorjectData = [
   {
-    image: "Chween.png",
+    image: "chween.png",
     dis: "This is a real-time chat application with a responsive, mobile-friendly interface that supports user authentication and one-to-one messaging. It focuses on reliable message delivery, simple UI design, and smooth performance across devices.",
     heading: "Chween",
     tech: [
       "React.js",
       "Tailwind css",
-      "Mongodb",
+      "PostgreSQL",
       "Node.js",
       "express.js",
       "Socket.io",
@@ -27,15 +27,6 @@ const PorjectData = [
     link: "https://github.com/codeArray-go/AllLinks_f.git",
     src: "https://all-links-f.vercel.app/",
     id: 2,
-  },
-  {
-    image: "Linphase_Technology.png",
-    dis: "Linphase Technology is a frontend-focused company website created to present the brand, services, and basic information in a clear and structured way. The project was built with the goal of responsiveness, and UI structure. The website includes multiple sections,with fully responsive layout and adaptiveness properly across different screen sizes.",
-    tech: ["Next.js", "Tailwind css", "JavaScript", "motion"],
-    heading: "Linphase Technology",
-    link: "https://github.com/codeArray-go/Linphase-Technology.git",
-    src: "http://linphasetechnology.com/",
-    id: 3,
   },
 ];
 
