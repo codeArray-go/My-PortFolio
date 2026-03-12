@@ -14,16 +14,20 @@ const CoderInfo = {
     "Java",
     "JavaScript",
     "TypeScript",
+    "SQL",
     "HTML",
     "CSS",
     "React.js",
+    "Next.js",
     "Node.js",
     "Express.js",
     "MongoDB",
-    "Next.js",
+    "PostgreSQL",
     "Rest API",
     "Socket.io",
-    "Redis"
+    "Redis",
+    "Git",
+    "GitHub"
   ],
 };
 
@@ -54,7 +58,7 @@ const CodeProfile = () => {
       </div>
 
       {/* Card Main */}
-      <div className="w-full h-full py-6 sm:py-10 ps-10 sm:px-12 leading-relaxed wrap-break-word">
+      <div className="w-full h-full py-6 sm:py-10 ps-10 sm:px-12 leading-relaxed wrap-break-word text-sm">
         <ul className="list-decimal space-y-1">
           <li>
             <span className="text-blue-300">const </span>

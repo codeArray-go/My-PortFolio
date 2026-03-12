@@ -24,7 +24,7 @@ const PorjectData = [
     dis: "AllLinks is a responsive web application that lets users create a single, customizable page to display multiple links. Each user can sign and create a profile that includes their name, profile picture, and a list of personal or professional links (e.g., social media, portfolios, or websites). The frontend is built with Next.js and styled using Tailwind CSS to ensure mobile-friendly and clean layouts across devices.",
     heading: "AllLinks",
     tech: ["Next.js", "Tailwind css", "Mongodb", "Node.js", "express.js"],
-    link: "https://github.com/codeArray-go/AllLinks_f.git",
+    link: "https://github.com/codeArray-go/AllLinks",
     src: "https://all-links-f.vercel.app/",
     id: 2,
   },

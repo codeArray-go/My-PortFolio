@@ -80,7 +80,8 @@ const About = () => {
               {
                 lang: "React",
                 src: "react.svg",
-              },              {
+              },
+              {
                 lang: "Next.js",
                 src: "Nextjs.svg",
               },
@@ -103,14 +104,23 @@ const About = () => {
               {
                 lang: "mongoDB",
                 src: "mongodb.ico",
-              },              {
+              },
+              {
                 lang: "PostgreSQL",
                 src: "PostgreSQL.png",
+              },
+              {
+                lang: "Git",
+                src: "Git.png",
+              },
+              {
+                lang: "Github",
+                src: "github.svg",
               },
             ].map((tech, idx) => (
               <div
                 key={idx}
-                className="px-4 py-2 rounded-full text-sm bg-[#121826] border border-gray-700 text-gray-300 flex items-center gap-2"
+                className="px-4 h-10 py-2 rounded-full text-sm bg-[#121826] border border-gray-700 text-gray-300 flex items-center gap-2"
               >
                 <Image
                   src={`${process.env.NEXT_PUBLIC_URL_LOGO}/${tech.src}`}
