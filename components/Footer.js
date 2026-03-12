@@ -90,7 +90,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-2">Tech Stack</h4>
             <p className="text-gray-400 text-sm">
-              HTML · CSS · JavaScript · React · Node.js · MongoDB · Java
+              HTML · CSS · JavaScript · React · Next.js · Node.js · MongoDB · Java · PostgreSQL · SQL · Redis
             </p>
           </div>
         </div>

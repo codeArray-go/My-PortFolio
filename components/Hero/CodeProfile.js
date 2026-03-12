@@ -23,6 +23,7 @@ const CoderInfo = {
     "Next.js",
     "Rest API",
     "Socket.io",
+    "Redis"
   ],
 };
 

@@ -80,6 +80,9 @@ const About = () => {
               {
                 lang: "React",
                 src: "react.svg",
+              },              {
+                lang: "Next.js",
+                src: "Nextjs.svg",
               },
               {
                 lang: "Node.js",
@@ -94,8 +97,15 @@ const About = () => {
                 src: "expressjs.png",
               },
               {
+                lang: "Redis",
+                src: "Redis.svg",
+              },
+              {
                 lang: "mongoDB",
                 src: "mongodb.ico",
+              },              {
+                lang: "PostgreSQL",
+                src: "PostgreSQL.png",
               },
             ].map((tech, idx) => (
               <div
