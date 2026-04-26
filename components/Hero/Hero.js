@@ -36,7 +36,7 @@ const Hero = () => {
         <h1
           className={`text-white font-black text-3xl sm:text-4xl md:text-5xl leading-tight tracking-wide ${robotoslab.className}`}
         >
-          A, <span className="text-yellow-300">MERN</span> STACK DEVELOPER
+          A, <span className="text-yellow-300">FULL</span> STACK DEVELOPER
         </h1>
 
         {/* Practices */}
