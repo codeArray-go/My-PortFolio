@@ -5,11 +5,6 @@ import Image from "next/image";
 
 const socials = [
   {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/akhil-singh-bhandari-4267a4310/",
-    icon: "/linkedin.svg",
-  },
-  {
     name: "GitHub",
     href: "https://github.com/codeArray-go",
     icon: "/github.svg",

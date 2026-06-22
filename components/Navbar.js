@@ -15,51 +15,34 @@ const Navbar = () => {
     >
       {/* Certification */}
       <div className="text-white hidden sm:flex flex-col items-center Nunito font-black text-3xl">
-        <Link
-          href="/"
-          className="cursor-pointer"
-        >
+        <Link href="/" className="cursor-pointer">
           &lt;ASB &#8725;&gt;
         </Link>
       </div>
 
       {/* Blog Menu */}
       <div className="relative bg-[rgba(255,255,255,0.06)] py-5 px-6 sm:px-16 rounded-2xl">
-        <span className="absolute -top-2.5 left-3 bg-[#9b9b9bf8] px-4 py-0.5 text-xs rounded-full border border-gray-700">
-          My Blogs
+        <span className="absolute -top-2.5 left-3 bg-[#3f3f3f] px-4 py-0.5 text-xs rounded-full border border-gray-700 text-gray-300">
+          Connect
         </span>
 
-        <ul className="flex flex-wrap justify-center items-center gap-4 text-white text-sm sm:text-base">
+        <div className="flex flex-wrap justify-center items-center gap-4 text-white">
           <Link
-            href="/"
-            className="cursor-pointer p-2 bg-[rgba(255,255,255,0.1)] rounded-full"
+            href="https://chat-app-one-tau-18.vercel.app/"
+            target="_black"
+            className="cursor-pointer flex items-center gap-2"
           >
+            <span className="text-white text-sm sm:text-base hover:underline underline-offset-4">
+              Chat in Chween
+            </span>
             <Image
-              src={`${process.env.NEXT_PUBLIC_URL}/Home.svg`}
-              alt="home"
+              src="/Message.svg"
+              alt="message svg"
               height={25}
               width={25}
-            />
+            />{" "}
           </Link>
-          <Link
-            href="/blogs/Java"
-            className="cursor-pointer hover:underline underline-offset-4"
-          >
-            Java
-          </Link>
-          <Link
-            href="/blogs/JavaScript"
-            className="cursor-pointer hover:underline underline-offset-4"
-          >
-            JavaScript
-          </Link>
-          <Link
-            href="/blogs/TypeScript"
-            className="cursor-pointer hover:underline underline-offset-4"
-          >
-            TypeScript
-          </Link>
-        </ul>
+        </div>
       </div>
 
       {/* Social Media Handles */}

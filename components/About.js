@@ -91,7 +91,11 @@ const About = () => {
               },
               {
                 lang: "Express.js",
-                src: "expressjs.png",
+                src: "expressjs.png",     
+              },
+              {
+                lang: "Redis",
+                src: "Redis.svg",
               },
               {
                 lang: "mongoDB",

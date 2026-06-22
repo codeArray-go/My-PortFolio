@@ -4,18 +4,18 @@ import ProjectCard from "./ProjectCard";
 const PorjectData = [
   {
     image: "Chween.png",
-    dis: "This is a real-time chat application with a responsive, mobile-friendly interface that supports user authentication and one-to-one messaging. It focuses on reliable message delivery, simple UI design, and smooth performance across devices.",
+    dis: "This is a real-time chat application. Mobile-friendly interface that supports user authentication and one-to-one messaging. It focuses on reliable message delivery, simple UI design, and smooth performance across device. It is created on both mobile application and web level. Click on view project to see web version and click on code link to get mobile application version.",
     heading: "Chween",
     tech: [
-      "React.js",
+      "React.js & Flutter",
       "Tailwind css",
-      "Mongodb",
+      "PostgreSQL",
       "Node.js",
       "express.js",
       "Socket.io",
       "Cloudinary",
     ],
-    link: "https://github.com/codeArray-go/Chat_App",
+    link: "https://github.com/codeArray-go/chween-app",
     src: "https://chat-app-one-tau-18.vercel.app/",
     id: 1,
   },
@@ -27,15 +27,6 @@ const PorjectData = [
     link: "https://github.com/codeArray-go/AllLinks_f.git",
     src: "https://all-links-f.vercel.app/",
     id: 2,
-  },
-  {
-    image: "Linphase_Technology.png",
-    dis: "Linphase Technology is a frontend-focused company website created to present the brand, services, and basic information in a clear and structured way. The project was built with the goal of responsiveness, and UI structure. The website includes multiple sections,with fully responsive layout and adaptiveness properly across different screen sizes.",
-    tech: ["Next.js", "Tailwind css", "JavaScript", "motion"],
-    heading: "Linphase Technology",
-    link: "https://github.com/codeArray-go/Linphase-Technology.git",
-    src: "http://linphasetechnology.com/",
-    id: 3,
   },
 ];
 
