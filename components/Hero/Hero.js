@@ -67,7 +67,7 @@ const Hero = () => {
 
         {/* Interests */}
         <p className="w-full text-gray-400 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-sm sm:text-base leading-relaxed">
-          Love Java
+          Love Blockchain And Rust
           <Image
             className="mx-1"
             src={`${process.env.NEXT_PUBLIC_URL}/Logo/java.svg`}
@@ -101,26 +101,6 @@ const Hero = () => {
                active:scale-95"
           >
             To Hire Me
-          </Link>
-
-          {/* Resume */}
-          <Link
-            href="https://codearray-go.github.io/My_resume/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-3
-               border border-gray-400 rounded-xl text-white
-               transition-all duration-300
-               hover:scale-105 hover:bg-[rgba(57,58,68,0.52)]
-               active:scale-95"
-          >
-            Get Resume
-            <DotLottieReact
-              src="https://lottie.host/07a63149-b014-4aef-9d6a-015cf0866ff7/Nttw3xTPaf.lottie"
-              loop
-              autoplay
-              style={{ width: 30, height: 30 }}
-            />
           </Link>
         </div>
       </motion.div>

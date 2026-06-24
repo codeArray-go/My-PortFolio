@@ -13,14 +13,14 @@ const Navbar = () => {
     <nav
       className={`${poppins.className} w-full flex flex-col sm:flex-row items-center sm:justify-between gap-6 px-4 sm:px-10 py-4`}
     >
-      {/* Certification */}
+      {/* Logo */}
       <div className="text-white hidden sm:flex flex-col items-center Nunito font-black text-3xl">
         <Link href="/" className="cursor-pointer">
           &lt;ASB &#8725;&gt;
         </Link>
       </div>
 
-      {/* Blog Menu */}
+      {/* Connect in my app */}
       <div className="relative bg-[rgba(255,255,255,0.06)] py-5 px-6 sm:px-16 rounded-2xl">
         <span className="absolute -top-2.5 left-3 bg-[#3f3f3f] px-4 py-0.5 text-xs rounded-full border border-gray-700 text-gray-300">
           Connect
@@ -52,11 +52,6 @@ const Navbar = () => {
             href: "https://github.com/codeArray-go",
             icon: "github.svg",
             alt: "GitHub",
-          },
-          {
-            href: "https://www.linkedin.com/in/akhil-singh-bhandari-4267a4310/",
-            icon: "linkedin.svg",
-            alt: "LinkedIn",
           },
           {
             href: "https://wa.me/+918882601382",
