@@ -54,9 +54,18 @@ const About = () => {
             ))}
           </ul>
 
+          <p className="text-gray-400 leading-relaxed mb-6">
+            And currently I learned Rust programming language and started
+            working on Blockchain technology. I have build 2 major project in Blockchain tech using Rust.
+          </p>
+
           {/* Tech Stack */}
           <div className="flex flex-wrap gap-3">
             {[
+              {
+                lang: "Rust",
+                src: "rust.svg"
+              },
               {
                 lang: "Java",
                 src: "java.svg",
@@ -91,7 +100,7 @@ const About = () => {
               },
               {
                 lang: "Express.js",
-                src: "expressjs.png",     
+                src: "expressjs.png",
               },
               {
                 lang: "Redis",

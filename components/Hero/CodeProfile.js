@@ -8,7 +8,7 @@ const jetbrain = JetBrains_Mono({
 
 const CoderInfo = {
   name: "Akhil Singh Bhandari",
-  role: "MERN stack developer",
+  role: "Full stack + Blockchain engineer",
   location: "Faridabad",
   skills: [
     "Rust",

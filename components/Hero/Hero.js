@@ -6,7 +6,6 @@ import CodeProfile from "./CodeProfile";
 import { Roboto_Slab } from "next/font/google";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const robotoslab = Roboto_Slab({
   variable: "--font-roboto-sans",
@@ -36,7 +35,7 @@ const Hero = () => {
         <h1
           className={`text-white font-black text-3xl sm:text-4xl md:text-5xl leading-tight tracking-wide ${robotoslab.className}`}
         >
-          A, <span className="text-yellow-300">MERN</span> STACK DEVELOPER
+          A, <span className="text-yellow-300">FULL STACK & BLOCKCHAIN</span> DEVELOPER
         </h1>
 
         {/* Practices */}
@@ -70,7 +69,7 @@ const Hero = () => {
           Love Blockchain And Rust
           <Image
             className="mx-1"
-            src={`${process.env.NEXT_PUBLIC_URL}/Logo/java.svg`}
+            src={`${process.env.NEXT_PUBLIC_URL}/Logo/rust.svg`}
             width={20}
             height={20}
             alt="javascript"
